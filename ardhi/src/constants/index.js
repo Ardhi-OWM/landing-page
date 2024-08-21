@@ -4,23 +4,33 @@ import {
     benefitIcon3,
     benefitIcon4,
     benefitImage2,
+  
+    discordBlack,
+    facebook,
+    instagram,
+    telegram,
+    twitter,
+
+    // heroIcons
+    file02,
+    plusSquare,
+    homeSmile,
+    searchMd,
+    
 
 /*     chromecast,
     disc02,
     discord,
-    discordBlack,
-    facebook,
     figma,
-    file02,
+    
     framer,
-    homeSmile,
-    instagram,
+    
     notification2,
     notification3,
     notification4,
     notion,
     photoshop,
-    plusSquare,
+  
     protopie,
     raindrop,
     recording01,
@@ -29,11 +39,10 @@ import {
     roadmap2,
     roadmap3,
     roadmap4,
-    searchMd,
+   
     slack,
     sliders04,
-    telegram,
-    twitter,
+    
     yourlogo, */
   } from "../assets";
   
@@ -77,10 +86,10 @@ import {
     },
       
   ];
+
+export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
   
- /*  export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
-  
-  export const notificationImages = [notification4, notification3, notification2];
+  /*  export const notificationImages = [notification4, notification3, notification2];
   
   export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
   

@@ -25,11 +25,33 @@ import twitter from "./socials/twitter.svg";
 import ardhi from "./logo/ardhi.svg";
 import ardhib from "./logo/ardhi_b.svg";
 
+// hero
+import sat_img1 from "./hero/sat_img1.png";
+import sat_img from "./hero/sat_img.png";
+import heroBackground from "./hero/hero-background.jpg";
+
+// heroIcons
+import homeSmile from "./heroIcons/home-smile.svg";
+import file02 from "./heroIcons/file-02.svg";
+import searchMd from "./heroIcons/search-md.svg";
+import plusSquare from "./heroIcons/plus-square.svg";
+
 
 export {
 
     background,
+
+    // hero
     curve,
+    sat_img,
+    sat_img1,
+    heroBackground,
+
+    // heroIcons
+    homeSmile,
+    file02,
+    searchMd,
+    plusSquare,
 
 
     benefitCard1,
