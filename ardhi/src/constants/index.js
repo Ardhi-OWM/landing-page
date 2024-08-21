@@ -4,7 +4,8 @@ import {
     benefitIcon3,
     benefitIcon4,
     benefitImage2,
-    chromecast,
+
+/*     chromecast,
     disc02,
     discord,
     discordBlack,
@@ -33,7 +34,7 @@ import {
     sliders04,
     telegram,
     twitter,
-    yourlogo,
+    yourlogo, */
   } from "../assets";
   
   export const navigation = [
@@ -77,7 +78,7 @@ import {
       
   ];
   
-  export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
+ /*  export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
   
   export const notificationImages = [notification4, notification3, notification2];
   
@@ -87,17 +88,17 @@ import {
     "Photo generating",
     "Photo enhance",
     "Seamless Integration",
-  ];
+  ]; */
   
-  export const brainwaveServicesIcons = [
+  /* export const brainwaveServicesIcons = [
     recording03,
     recording01,
     disc02,
     chromecast,
     sliders04,
-  ];
+  ]; */
   
-  export const roadmap = [
+  /* export const roadmap = [
     {
       id: "0",
       title: "Voice recognition",
@@ -131,12 +132,12 @@ import {
       status: "progress",
       imageUrl: roadmap4,
     },
-  ];
+  ]; */
   
-  export const collabText =
-    "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
+/*   export const collabText =
+    "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter."; */
   
-  export const collabContent = [
+/*   export const collabContent = [
     {
       id: "0",
       title: "Seamless Integration",
@@ -150,9 +151,9 @@ import {
       id: "2",
       title: "Top-notch Security",
     },
-  ];
+  ]; */
   
-  export const collabApps = [
+ /*  export const collabApps = [
     {
       id: "0",
       title: "Figma",
@@ -209,9 +210,9 @@ import {
       width: 38,
       height: 32,
     },
-  ];
+  ]; */
   
-  export const pricing = [
+ /*  export const pricing = [
     {
       id: "0",
       title: "Basic",
@@ -245,7 +246,7 @@ import {
         "Ability to explore the app and its features without any cost",
       ],
     },
-  ];
+  ]; */
   
   export const benefits = [
     {
