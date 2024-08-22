@@ -37,6 +37,11 @@ import file02 from "./heroIcons/file-02.svg";
 import searchMd from "./heroIcons/search-md.svg";
 import plusSquare from "./heroIcons/plus-square.svg";
 
+// notification
+import notification1 from "./notification/image-1.png";
+import notification2 from "./notification/image-2.png";
+import notification3 from "./notification/image-3.png";
+import notification4 from "./notification/image-4.png";
 
 export {
 
@@ -73,6 +78,11 @@ export {
     instagram,
     telegram,
     twitter,
+
+    notification1,
+    notification2,
+    notification3,
+    notification4,
 
     // logos
     ardhi,
