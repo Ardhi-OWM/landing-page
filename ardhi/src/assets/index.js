@@ -2,6 +2,7 @@
 // MasterJS
 import background from "./background.jpg";
 import curve from "./hero/curve.png";
+import loading from "./loading.png";
 
 import benefitCard1 from "./benefits/card-1.svg";
 import benefitCard2 from "./benefits/card-2.svg";
@@ -46,6 +47,7 @@ export {
     sat_img,
     sat_img1,
     heroBackground,
+    loading,
 
     // heroIcons
     homeSmile,
