@@ -30,6 +30,7 @@ import ardhib from "./logo/ardhi_b.svg";
 import sat_img1 from "./hero/sat_img1.png";
 import sat_img from "./hero/sat_img.png";
 import heroBackground from "./hero/hero-background.jpg";
+import edges from "./hero/edgesDet.png";
 
 // heroIcons
 import homeSmile from "./heroIcons/home-smile.svg";
@@ -53,6 +54,7 @@ export {
     sat_img1,
     heroBackground,
     loading,
+    edges,
 
     // heroIcons
     homeSmile,

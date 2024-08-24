@@ -30,7 +30,7 @@ const Hero = () => {
                     className="relative z-1 max-w-[62rem] mx-auto text-center 
                     mb-[4rem] md:mb-20 lg:mb-[6rem]">
                     <h1 className="h1 mb-6">
-                        Easily visualize and Transform Geospatial Data with &nbsp;
+                        Easily Visualize and Transform Geospatial Data with &nbsp;
                         <span className="inline-block relative">
                             Ardhi{" "}
                             <img src={curve}
@@ -63,7 +63,7 @@ const Hero = () => {
                                     height={490}
                                 />
                                 <Generating className="absolute left-4 right-4 bottom-5 md:left-1/2 md:right-auto md:bottom-8 md:w-[31rem] md:-translate-x-1/2" />
-                                
+
                                 <ScrollParallax isAbsolutelyPositioned>
                                     <ul className="hidden absolute -left-[5.5rem] bottom-[7.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl xl:flex">
                                         {heroIcons.map((icon, index) => (
@@ -77,7 +77,7 @@ const Hero = () => {
                                 <ScrollParallax isAbsolutelyPositioned>
                                     <Notification
                                         className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] xl:flex"
-                                        title="GeoAnalytics Results"
+                                        title="GeoAnalytics"
                                     />
                                 </ScrollParallax>
 
@@ -102,7 +102,9 @@ const Hero = () => {
             </div>
             <BottomLine />
         </Section>
+         
     );
+
 };
 
 export default Hero;
