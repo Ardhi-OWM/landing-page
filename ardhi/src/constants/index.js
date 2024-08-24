@@ -4,6 +4,10 @@ import {
     benefitIcon3,
     benefitIcon4,
     benefitImage2,
+    nLight,
+    run,
+    download,
+    //inter,
   
     discordBlack,
     facebook,
@@ -27,7 +31,7 @@ import {
     google,
     openstack,
 
-/*     chromecast,
+/*  chromecast,
     disc02,
     discord,
     figma,
@@ -270,30 +274,30 @@ export const companyLogos = [aws, google, openstack];
   export const benefits = [
     {
       id: "0",
-      title: "Ask anything",
-      text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+      title: "Seamlessly Run Python Scripts ",
+      text: "Run Python scripts directly within the platform, providing a powerful environment for custom geospatial analysis.",
       backgroundUrl: "./src/assets/benefits/card-1.svg",
-      iconUrl: benefitIcon1,
-      imageUrl: benefitImage2,
+      iconUrl: run,
+      imageUrl: nLight,
     },
     {
       id: "1",
-      title: "Improve everyday",
-      text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+      title: "Interactive Result Visualization",
+      text: "Transform raw data and script outputs into dynamic, interactive maps, making it easier to interpret and share your findings with others.",
       backgroundUrl: "./src/assets/benefits/card-2.svg",
-      iconUrl: benefitIcon2,
-      imageUrl: benefitImage2,
+      iconUrl: benefitIcon3,
+      imageUrl: nLight,
       light: true,
     },
     {
       id: "2",
-      title: "Connect everywhere",
-      text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+      title: "Download Results in Multiple Formats",
+      text: "Supports exporting analysis results in a variety of formats, including txt, Geotiff, CSV, GeoJson etc. ",
       backgroundUrl: "./src/assets/benefits/card-3.svg",
-      iconUrl: benefitIcon3,
-      imageUrl: benefitImage2,
+      iconUrl:download,
+      imageUrl: nLight,
     },
-    {
+/*     {
       id: "3",
       title: "Fast responding",
       text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
@@ -317,7 +321,7 @@ export const companyLogos = [aws, google, openstack];
       backgroundUrl: "./src/assets/benefits/card-6.svg",
       iconUrl: benefitIcon2,
       imageUrl: benefitImage2,
-    },
+    }, */
   ];
   
   export const socials = [
