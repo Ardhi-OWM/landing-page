@@ -13,8 +13,8 @@ const Notification = ({ className, title }) => {
             <img
                 src={edges} 
                 alt="Edges"
-                width={62}
-                height={62}
+                width={50}
+                height={50}
                 className='rounded-xl'
             />
 
@@ -38,7 +38,8 @@ const Notification = ({ className, title }) => {
                             </li>
                         ))}
                     </ul>
-                    <div className="body-2 text-n-13">1m ago</div>
+                    <div className="body-2 text-n-13">
+                        1m ago</div>
                 </div>
             </div>
         </div>

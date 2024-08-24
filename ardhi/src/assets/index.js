@@ -44,7 +44,17 @@ import notification2 from "./notification/image-2.png";
 import notification3 from "./notification/image-3.png";
 import notification4 from "./notification/image-4.png";
 
+// companyLogos
+import aws from "./companyLogo/AWSs.png";
+import google from "./companyLogo/Google.png";
+import openstack from "./companyLogo/OpenStack.png";
+
 export {
+
+    // Company logos
+    aws,
+    google,
+    openstack,
 
     background,
 
