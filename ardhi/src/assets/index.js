@@ -18,7 +18,8 @@ import benefitImage2 from "./benefits/image-2.png";
 import nLight from "./benefits/nLights.png";
 import run from "./benefits/run.png";
 import download from "./benefits/download.png";
-//import interact from "./benefits/interact.png";
+
+import check from "./check.svg";
 
 import discordBlack from "./socials/discord.svg";
 import facebook from "./socials/facebook.svg";
@@ -29,6 +30,7 @@ import twitter from "./socials/twitter.svg";
 // ochwada
 import ardhi from "./logo/ardhi.svg";
 import ardhib from "./logo/ardhi_b.svg";
+import favicon from "./favicon.png";
 
 // hero
 import sat_img1 from "./hero/sat_img1.png";
@@ -52,6 +54,7 @@ import notification4 from "./notification/image-4.png";
 import aws from "./companyLogo/AWSs.png";
 import google from "./companyLogo/Google.png";
 import openstack from "./companyLogo/OpenStack.png";
+import cloudapps from "./companyLogo/cloudapps.png";
 
 export {
 
@@ -59,8 +62,10 @@ export {
     aws,
     google,
     openstack,
+    cloudapps,
 
     background,
+    check,
 
     // hero
     curve,
@@ -109,4 +114,5 @@ export {
     // logos
     ardhi,
     ardhib,
+    favicon,
 };

@@ -31,6 +31,8 @@ import {
     google,
     openstack,
 
+    cloudapps,
+
 /*  chromecast,
     disc02,
     discord,
@@ -157,10 +159,12 @@ export const companyLogos = [aws, google, openstack];
     },
   ]; */
   
-/*   export const collabText =
-    "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter."; */
+  export const collabText =
+    "Ardhi integrates with leading cloud platforms to ensure robust data management, scalable storage, and efficient data processing."; 
+    export const collabText2 =
+    "Integrateing with leading cloud platforms to ensure robust data management, scalable storage, and efficient data processing."; 
   
-/*   export const collabContent = [
+  export const collabContent = [
     {
       id: "0",
       title: "Seamless Integration",
@@ -168,43 +172,65 @@ export const companyLogos = [aws, google, openstack];
     },
     {
       id: "1",
-      title: "Smart Automation",
+      title: "Data Flexibility",
     },
     {
       id: "2",
-      title: "Top-notch Security",
+      title: "Accessibility and Ease of Use",
     },
-  ]; */
+  ]; 
   
- /*  export const collabApps = [
+   export const collabApps = [
+    {
+      id: "7",
+      title: "Cloud Apps",
+      icon: cloudapps,
+      width: 34,
+      height: 35,
+    },
     {
       id: "0",
-      title: "Figma",
-      icon: figma,
+      title: "AWSs",
+      icon: aws,
       width: 26,
       height: 36,
     },
     {
+      id: "4",
+      title: "Cloud Apps",
+      icon: cloudapps,
+      width: 34,
+      height: 35,
+    },
+    {
       id: "1",
-      title: "Notion",
-      icon: notion,
+      title: "Google",
+      icon: google,
       width: 34,
       height: 36,
     },
     {
+      id: "5",
+      title: "Cloud Apps",
+      icon: cloudapps,
+      width: 34,
+      height: 35,
+    },
+    {
       id: "2",
-      title: "Discord",
-      icon: discord,
+      title: "Openstack",
+      icon: openstack,
       width: 36,
       height: 28,
     },
     {
       id: "3",
-      title: "Slack",
-      icon: slack,
+      title: "Cloud Apps",
+      icon: cloudapps,
       width: 34,
       height: 35,
     },
+    /* 
     {
       id: "4",
       title: "Photoshop",
@@ -232,8 +258,8 @@ export const companyLogos = [aws, google, openstack];
       icon: raindrop,
       width: 38,
       height: 32,
-    },
-  ]; */
+    }, */
+  ]; 
   
  /*  export const pricing = [
     {
@@ -297,31 +323,6 @@ export const companyLogos = [aws, google, openstack];
       iconUrl:download,
       imageUrl: nLight,
     },
-/*     {
-      id: "3",
-      title: "Fast responding",
-      text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-      backgroundUrl: "./src/assets/benefits/card-4.svg",
-      iconUrl: benefitIcon4,
-      imageUrl: benefitImage2,
-      light: true,
-    },
-    {
-      id: "4",
-      title: "Ask anything",
-      text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-      backgroundUrl: "./src/assets/benefits/card-5.svg",
-      iconUrl: benefitIcon1,
-      imageUrl: benefitImage2,
-    },
-    {
-      id: "5",
-      title: "Improve everyday",
-      text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
-      backgroundUrl: "./src/assets/benefits/card-6.svg",
-      iconUrl: benefitIcon2,
-      imageUrl: benefitImage2,
-    }, */
   ];
   
   export const socials = [
