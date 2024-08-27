@@ -27,6 +27,8 @@ import download from "./benefits/download.png";
 
 import check from "./check.svg";
 
+// socials
+
 import discordBlack from "./socials/discord.svg";
 import facebook from "./socials/facebook.svg";
 import instagram from "./socials/instagram.svg";
@@ -65,7 +67,6 @@ import cloudapps from "./companyLogo/cloudapps.png";
 //collaboration
 import curve1 from "./collab/curve-1.svg";
 import curve2 from "./collab/curve-2.svg";
-
 
 
 export {

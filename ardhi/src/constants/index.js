@@ -72,11 +72,11 @@ import {
       title: "features",
       url: "#features",
     },
-    {
+    /* {
       id: "2",
       title: "Roadmap",
       url: "#road",
-    },
+    }, */
     {
       id: "3",
       title: "Releases",
@@ -277,31 +277,31 @@ export const companyLogos = [aws, google, openstack];
       id: "0",
       title: "Discord",
       iconUrl: discordBlack,
-      url: "#",
+      url: 'https://linda-ochwada.netlify.app/',
     },
     {
       id: "1",
       title: "Twitter",
       iconUrl: twitter,
-      url: "#",
+      url: 'https://linda-ochwada.netlify.app/',
     },
     {
       id: "2",
       title: "Instagram",
       iconUrl: instagram,
-      url: "#",
+      url: 'https://linda-ochwada.netlify.app/',
     },
     {
       id: "3",
       title: "Telegram",
       iconUrl: telegram,
-      url: "#",
+      url: 'https://linda-ochwada.netlify.app/',
     },
     {
       id: "4",
       title: "Facebook",
       iconUrl: facebook,
-      url: "#",
+      url: 'https://linda-ochwada.netlify.app/',
     },
   ];
   

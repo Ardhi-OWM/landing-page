@@ -6,6 +6,7 @@ import Hero from "./components/Hero";
 import Benefits from "./components/Benefits";
 import Collaboration from "./components/Collaboration";
 import Blogs from "./components/Blogs";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Benefits />
         <Collaboration/>
         <Blogs/>
+        <Footer />
       </div>
       
       <ButtonGradient />
