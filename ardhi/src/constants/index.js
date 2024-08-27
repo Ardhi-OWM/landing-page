@@ -84,8 +84,8 @@ import {
     },
     {
       id: "4",
-      title: "Blog",
-      url: "#blog",
+      title: "Blogs",
+      url: "#blogs",
     },
     {
       id: "5",
@@ -181,13 +181,6 @@ export const companyLogos = [aws, google, openstack];
   ]; 
   
    export const collabApps = [
-   /*  {
-      id: "7",
-      title: "Cloud Apps",
-      icon: cloudapps,
-      width: 34,
-      height: 35,
-    }, */
     {
       id: "0",
       title: "AWSs",
@@ -218,41 +211,38 @@ export const companyLogos = [aws, google, openstack];
     },
   ]; 
   
- /*  export const pricing = [
+   export const blogContent = [
     {
       id: "0",
       title: "Basic",
-      description: "AI chatbot, personalized recommendations",
-      price: "0",
-      features: [
-        "An AI chatbot that can understand your queries",
-        "Personalized recommendations based on your preferences",
-        "Ability to explore the app and its features without any cost",
-      ],
+      description: "So I started to walk into the water. I won't lie to you boys, I was terrified. I tell you Jerry at that moment, I was a marine biologist.",
+      url: 'https://linda-ochwada.netlify.app/'
     },
     {
       id: "1",
       title: "Premium",
       description: "Advanced AI chatbot, priority support, analytics dashboard",
-      price: "9.99",
-      features: [
-        "An advanced AI chatbot that can understand complex queries",
-        "An analytics dashboard to track your conversations",
-        "Priority support to solve issues quickly",
-      ],
+      url: 'https://linda-ochwada.netlify.app/'
     },
     {
       id: "2",
       title: "Enterprise",
       description: "Custom AI chatbot, advanced analytics, dedicated account",
-      price: null,
-      features: [
-        "An AI chatbot that can understand your queries",
-        "Personalized recommendations based on your preferences",
-        "Ability to explore the app and its features without any cost",
-      ],
+      url: 'https://linda-ochwada.netlify.app/'
     },
-  ]; */
+    {
+      id: "3",
+      title: "Enterprise 2",
+      description: "Custom AI chatbot, advanced analytics, dedicated account",
+      url: 'https://linda-ochwada.netlify.app/'
+    },
+    {
+      id: "4",
+      title: "Enterprise 3",
+      description: "Custom AI chatbot, advanced analytics, dedicated account",
+      url: 'https://linda-ochwada.netlify.app/'
+    },
+  ]; 
   
   export const benefits = [
     {

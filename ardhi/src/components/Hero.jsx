@@ -24,7 +24,7 @@ const Hero = () => {
             crosses
             crossesOffSet="lg:translate-y-[5.25rem]"
             customPaddings
-            id="hero">
+            id="about">
 
             <div className="container relative" ref={parallaxRef}>
                 <div

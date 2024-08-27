@@ -4,6 +4,12 @@ import background from "./background.jpg";
 import curve from "./hero/curve.png";
 import loading from "./loading.png";
 
+
+// blogs
+import sphere from "./blogs/4-small.png";
+import lines from "./blogs/lines.svg";
+import stars from "./blogs/stars.svg";
+
 import benefitCard1 from "./benefits/card-1.svg";
 import benefitCard2 from "./benefits/card-2.svg";
 import benefitCard3 from "./benefits/card-3.svg";
@@ -66,6 +72,10 @@ export {
     // collab
     curve1,
     curve2,
+
+    sphere,
+    lines,
+    stars,
 
     // Company logos
     aws,
