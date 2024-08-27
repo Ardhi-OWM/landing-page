@@ -10,9 +10,9 @@ const Collaboration = () => {
     <Section crosses>
       <div className='container lg:flex'>
         <div className='max-w-[25rem]'>
-          <h2 className='h2 mb-4 md:mb-8'>
+          <h3 className='h3 mb-4 md:mb-8'>
             GeoApp for Empowering Decision-Makers
-          </h2>
+          </h3>
           <ul className='max-w-[22rem] mb-10 md:mb-14'>
             {collabContent.map((item) => (
               <li className='mb-3 py-3' key={item.id}>

@@ -28,7 +28,12 @@ const Header = () => {
 
         enablePageScroll();
         setopenNavigation(false);
-    }
+
+        // open new tab for https links
+        if (!url.startsWith('https')) {
+            window.location.hash = url;
+        }
+    };
 
     return (
         <div className={`fixed top-0 left-0 w-full z-50 border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm
@@ -43,9 +48,11 @@ const Header = () => {
                         {navigation.map((item) => (
                             <a key={item.id}
                                 href={item.url}
-                                onClick={handleClick}
-                                //target="_blank"
-                                //rel="noopener noreferrer"
+                                // open new tab for https links
+                                onClick={() => handleClick(item.url)}
+                                target={item.url.startsWith('https') ? "_blank" : undefined}
+                                rel={item.url.startsWith('https') ? "noopener noreferrer" : undefined}
+
                                 className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 
                             ${item.onlyMobile ? "lg:hidden" : ""} 
                             px-6 py-6 md:py-8 lg:mr-0.25 lg:text-xs lg-font-semibold 
@@ -71,7 +78,7 @@ const Header = () => {
                 </Button>
                 <Button className="ml-auto lg:hidden" px="px-3"
                     onClick={toggleNavigation}>
-                    <MenuSvg openNavigation={openNavigation}/>
+                    <MenuSvg openNavigation={openNavigation} />
                 </Button>
 
             </div>

@@ -74,18 +74,18 @@ import {
     },
     {
       id: "2",
-      title: "Doc",
-      url: "#doc",
+      title: "Roadmap",
+      url: "#road",
     },
     {
       id: "3",
-      title: "Blog",
-      url: "#blog",
+      title: "Releases",
+      url: "https://github.com/Ardhi-OWM/landing-page/releases/",
     },
     {
       id: "4",
-      title: "Roadmap",
-      url: "#road",
+      title: "Blog",
+      url: "#blog",
     },
     {
       id: "5",
