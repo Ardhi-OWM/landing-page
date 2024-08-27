@@ -56,7 +56,16 @@ import google from "./companyLogo/Google.png";
 import openstack from "./companyLogo/OpenStack.png";
 import cloudapps from "./companyLogo/cloudapps.png";
 
+//collaboration
+import curve1 from "./collab/curve-1.svg";
+import curve2 from "./collab/curve-2.svg";
+
+
+
 export {
+    // collab
+    curve1,
+    curve2,
 
     // Company logos
     aws,

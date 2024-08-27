@@ -181,26 +181,19 @@ export const companyLogos = [aws, google, openstack];
   ]; 
   
    export const collabApps = [
-    {
+   /*  {
       id: "7",
       title: "Cloud Apps",
       icon: cloudapps,
       width: 34,
       height: 35,
-    },
+    }, */
     {
       id: "0",
       title: "AWSs",
       icon: aws,
       width: 26,
       height: 36,
-    },
-    {
-      id: "4",
-      title: "Cloud Apps",
-      icon: cloudapps,
-      width: 34,
-      height: 35,
     },
     {
       id: "1",
@@ -210,55 +203,19 @@ export const companyLogos = [aws, google, openstack];
       height: 36,
     },
     {
-      id: "5",
+      id: "2",
       title: "Cloud Apps",
       icon: cloudapps,
       width: 34,
       height: 35,
     },
     {
-      id: "2",
+      id: "3",
       title: "Openstack",
       icon: openstack,
       width: 36,
       height: 28,
     },
-    {
-      id: "3",
-      title: "Cloud Apps",
-      icon: cloudapps,
-      width: 34,
-      height: 35,
-    },
-    /* 
-    {
-      id: "4",
-      title: "Photoshop",
-      icon: photoshop,
-      width: 34,
-      height: 34,
-    },
-    {
-      id: "5",
-      title: "Protopie",
-      icon: protopie,
-      width: 34,
-      height: 34,
-    },
-    {
-      id: "6",
-      title: "Framer",
-      icon: framer,
-      width: 26,
-      height: 34,
-    },
-    {
-      id: "7",
-      title: "Raindrop",
-      icon: raindrop,
-      width: 38,
-      height: 32,
-    }, */
   ]; 
   
  /*  export const pricing = [

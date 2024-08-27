@@ -3,6 +3,7 @@ import Section from './Section';
 import { collabApps, collabContent, collabText, collabText2 } from '../constants';
 import { check, favicon } from '../assets';
 import Button from './Button';
+import { RightCurve, LeftCurve } from './design/Collaboration';
 
 const Collaboration = () => {
   return (
@@ -26,7 +27,7 @@ const Collaboration = () => {
               </li>
             ))}
           </ul>
-          <Button> Try it now</Button>
+          <Button> <a href='/signup'>Try it now</a> </Button>
         </div>
         <div className='lg:ml-auto xl:w-[38rem] mt-4'>
           <p className='body-2 mb-8 text-n-4 md:mb-16 lg:mb-32 lg:w-[22rem] lg:mx-auto'>
@@ -49,9 +50,9 @@ const Collaboration = () => {
             </div>
             <ul>
               {collabApps.map((app, index) => (
-                <li className={`absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] origin-bottom rotate-${index * 45}`}
+                <li className={`absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] origin-bottom rotate-${index * 90}`}
                  key={app.id}>
-                  <div className={`relative -top-[1.6rem] flex w-[3.2rem] h-[3.2rem] bg-n-7 border border-n-1/15 rounded-xl -rotate-${index * 45}`}>
+                  <div className={`relative -top-[1.6rem] flex w-[3.2rem] h-[3.2rem] bg-n-7 border border-n-1/15 rounded-xl -rotate-${index * 90}`}>
                     <img className='m-auto'
                     width={app.width}
                     height={app.height}
@@ -61,6 +62,8 @@ const Collaboration = () => {
                 </li>
               ))}
             </ul>
+            <LeftCurve/>
+            <RightCurve/>
           </div>
         </div>
       </div>
