@@ -1,15 +1,37 @@
-import React, { useState } from 'react';
-import { blogContent } from '../constants';
+import React, { useState, useEffect } from 'react';
 import Button from './Button';
 
 const BlogsCard = () => {
-
-  // Search 
   const [searchQuery, setSearchQuery] = useState('');
   const [displayCount, setDisplayCount] = useState(4); // Initial number of posts displayed
+  const [blogContent, setBlogContent] = useState([]); // State to hold blog posts
+  const [loading, setLoading] = useState(true); // Loading state
+
+  useEffect(() => {
+    // Fetch blog posts from WordPress.com
+    const fetchPosts = async () => {
+      try {
+        const response = await fetch('https://public-api.wordpress.com/wp/v2/sites/ardhi23.wordpress.com/posts');
+        const data = await response.json();
+        // Format data to match your existing structure
+        const formattedData = data.map(post => ({
+          id: post.id,
+          title: post.title.rendered.replace(/&nbsp;/g, " "), // Replace &nbsp; with regular space
+          description: post.excerpt.rendered.replace(/(<([^>]+)>)/gi, ""), // Strip HTML tags
+          url: post.link
+        }));
+        setBlogContent(formattedData);
+        setLoading(false);
+      } catch (error) {
+        console.error('Error fetching the blog posts:', error);
+        setLoading(false);
+      }
+    };
+
+    fetchPosts();
+  }, []);
 
   // Helper function to truncate text to 150 characters
-
   const truncateText = (text, maxLength) => {
     if (text.length > maxLength) {
       return text.slice(0, maxLength) + '...';
@@ -41,6 +63,9 @@ const BlogsCard = () => {
     setDisplayCount(4);  // Reset display count to the initial value
   };
 
+  if (loading) {
+    return <p>Loading blog posts...</p>;
+  }
 
   return (
     <>
