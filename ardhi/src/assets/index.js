@@ -10,6 +10,7 @@ import sphere from "./blogs/4-small.png";
 import lines from "./blogs/lines.svg";
 import stars from "./blogs/stars.svg";
 
+// Benefits
 import benefitCard1 from "./benefits/card-1.svg";
 import benefitCard2 from "./benefits/card-2.svg";
 import benefitCard3 from "./benefits/card-3.svg";
@@ -24,6 +25,7 @@ import benefitImage2 from "./benefits/image-2.png";
 import nLight from "./benefits/nLights.png";
 import run from "./benefits/run.png";
 import download from "./benefits/download.png";
+import opensource from "./benefits/opensource.png"
 
 import check from "./check.svg";
 
@@ -119,6 +121,7 @@ export {
     benefitImage2,
 
     nLight,
+    opensource,
 
     discordBlack,
     facebook,

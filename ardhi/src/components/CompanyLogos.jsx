@@ -4,8 +4,9 @@ import { companyLogos } from "../constants";
 const CompanyLogos = ({ className }) => {
     return (
             <div className={className}>
-                <h5 className='tagline mb-6 text-center text-n-1/50'>
-                    run python scripts from your favorite <u>cloud platform</u> and easly visualize your results with Ardhi.
+                <h5 className='tagline mb-6 text-center text-n-1/50 leading-7'>
+                    Visualize geospatial results from data and python scripts running on your favorite <u>cloud platform</u>. 
+                    Let non technical stakeholders easly visualize your results with Ardhi and make decisions.
                 </h5>
                 <ul className="flex">
                     {companyLogos.map((logo, index) => (

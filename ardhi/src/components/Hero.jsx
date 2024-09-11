@@ -43,7 +43,7 @@ const Hero = () => {
                         </span>
                     </h1>
                     <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
-                        Unlock the Power of Geospatial Analysis Effortlessly with Ardhi—Your Gateway to Insightful, Data-Driven Decisions.
+                    Unlock the power of Geospatial Analysis with Ardhi - Your Gateway to Efficient and Insightful Data-Driven Decision Support System
                     </p>
                     <Button href="/signup" white>
                         Get Started

@@ -14,7 +14,7 @@ const Benefits = () => {
         <Section id="features">
             <div className='container relative z-2'>
                 <Heading className='md:max-w-md lg:max-w-4xl'
-                    title="Work Efficiently & Easily with Ardhi" />
+                    title="Work Efficiently with Ardhi" />
                 <div className='flex flex-wrap gap-10 mb-10'>
                     {benefits.map((item) => (
                         <div
@@ -30,7 +30,7 @@ const Benefits = () => {
                                         width={48}
                                         height={48}
                                         alt={item.title} />
-                                    <p className='ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider'> Explore more </p>
+                                    <p className='ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider'> Explore more  </p>
                                     <Arrow />
                                 </div>
                             </div>
