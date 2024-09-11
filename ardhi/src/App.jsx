@@ -11,6 +11,7 @@ import Blogs from "./components/Blogs";
 import Footer from "./components/Footer";
 import BlogDetails from "./components/BlogDetails"; // Import the BlogDetail component
 
+
 const App = () => {
   return (
     <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
@@ -30,7 +31,8 @@ const App = () => {
         />
 
         {/* Route for individual blog posts */}
-        <Route path="/blog/:id" element={<BlogDetails />} />
+       
+        <Route path="/blog/:id/" element={<BlogDetails />} />
 
         {/* Route for About page */}
         <Route path="/about" element={<Hero />} />
@@ -40,7 +42,7 @@ const App = () => {
 
         {/* Route for Blogs page */}
         <Route path="/blogs" element={<Blogs />} />  {/* This will display all blogs */}
-        
+
       </Routes>
       <Footer />
       <ButtonGradient />
