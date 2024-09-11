@@ -37,11 +37,15 @@ export default {
           12: "#2E2A41",
           13: "#6C7275",
         },
+
+        
       },
       fontFamily: {
         sans: ["var(--font-sora)", ...fontFamily.sans],
         code: "var(--font-code)",
         grotesk: "var(--font-grotesk)",
+        'source-code': ['Source Code Pro', 'monospace'],
+        'sora': ['Sora', 'sans-serif'],
       },
       letterSpacing: {
         tagline: ".15em",
