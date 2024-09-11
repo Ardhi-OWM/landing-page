@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom'; // Import Link for internal routing
 import Button from './Button';
 
 const BlogsCard = () => {
@@ -18,6 +19,7 @@ const BlogsCard = () => {
           id: post.id,
           title: post.title.rendered.replace(/&nbsp;/g, " "), // Replace &nbsp; with regular space
           description: post.excerpt.rendered.replace(/(<([^>]+)>)/gi, ""), // Strip HTML tags
+          content: post.content.rendered, // Fetch full content of the post
           url: post.link
         }));
         setBlogContent(formattedData);
@@ -85,9 +87,16 @@ const BlogsCard = () => {
             <h6 className='text-lg font-semibold mb-3 text-n-4'>{item.title}</h6>
             <p className='text-sm text-n-3 mb-3'>{truncateText(item.description, 150)}</p>
             <div className='mt-6 flex items-center justify-auto'>
-              <a href={item.url}
-                target='_blank' rel="noopener noreferrer"
-                className='tagline text-n-10 hover:text-n-5 underline uppercase px-3 py-1'> Read more ...</a>
+              {/* Internal link to blog detail page */}
+              <Link
+                to={`/blog/${item.id}`}
+                onClick={(e) => {
+                  e.preventDefault(); // Prevents the default navigation
+                  window.open(`/blog/${item.id}`, '_blank', 'noopener,noreferrer'); // Opens in a new tab
+                }}
+                className='tagline text-n-10 hover:text-n-5 underline uppercase px-3 py-1'>
+                Read more ...
+              </Link>
             </div>
           </div>
         ))}

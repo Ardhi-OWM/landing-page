@@ -11,8 +11,8 @@ import { HamburgerMenu } from "./design/Header";
 
 const Header = () => {
     const pathname = useLocation();
-
     const [openNavigation, setopenNavigation] = useState(true);
+
     const toggleNavigation = () => {
         if (openNavigation) {
             setopenNavigation(false);
@@ -23,7 +23,7 @@ const Header = () => {
         }
     };
 
-    const handleClick = () => {
+    const handleClick = (url) => {
         if (!openNavigation) return;
 
         enablePageScroll();

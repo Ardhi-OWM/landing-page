@@ -86,3 +86,40 @@
 .-rotate-360 {
   @apply rotate-[-360deg];
 }
+
+/*blogs */
+.blog-detail .content {
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.blog-detail ul, .blog-detail ol {
+  margin-left: 2rem; /* Add some spacing for lists */
+  margin-bottom: 1.5rem; /* Space below the list */
+}
+
+.blog-detail li {
+  margin-bottom: 0.5rem; /* Space between list items */
+}
+
+.blog-detail p {
+  margin-bottom: 1.5rem; /* Space between paragraphs */
+}
+
+.blog-detail h1, .blog-detail h2, .blog-detail h3 {
+  margin-top: 2rem; /* Space above headings */
+  margin-bottom: 1rem; /* Space below headings */
+}
+
+/* Add grey color to links */
+.blog-detail .content a {
+  color: grey; /* Set link color to grey */
+  text-decoration: none; /* Remove underline if necessary */
+}
+
+/* Optional: Add hover effect for links */
+.blog-detail .content a:hover {
+  color: darkgrey; /* Change link color on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
