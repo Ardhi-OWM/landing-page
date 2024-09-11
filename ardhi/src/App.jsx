@@ -31,6 +31,16 @@ const App = () => {
 
         {/* Route for individual blog posts */}
         <Route path="/blog/:id" element={<BlogDetails />} />
+
+        {/* Route for About page */}
+        <Route path="/about" element={<Hero />} />
+
+        {/* Route for Features page */}
+        <Route path="/features" element={<Benefits />} />  {/* Benefits is used for Features */}
+
+        {/* Route for Blogs page */}
+        <Route path="/blogs" element={<Blogs />} />  {/* This will display all blogs */}
+        
       </Routes>
       <Footer />
       <ButtonGradient />

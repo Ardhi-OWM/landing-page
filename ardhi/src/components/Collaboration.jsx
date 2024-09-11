@@ -71,4 +71,4 @@ const Collaboration = () => {
   )
 }
 
-export default Collaboration
+export default Collaboration;
