@@ -101,31 +101,40 @@
 
 /* Apply Sora font to the entire blog detail content */
 .blog-detail {
-  font-family: 'Sora', sans-serif, Arial, Helvetica; /* Sora as primary, Arial and Helvetica as fallback */
+  font-family: 'Sora', sans-serif, Arial, Helvetica;
+  /* Sora as primary, Arial and Helvetica as fallback */
   line-height: 1.6;
-  color: #e1dbdb; /* Ensure the text color is set */
+  color: #e1dbdb;
+  /* Ensure the text color is set */
 }
 
 /* Ordered List Styles (e.g., 1, 2, 3) */
 .blog-detail ol {
-  list-style-type: decimal; /* Use numbers for ordered list */
-  margin-left: 2rem; /* Add spacing for ordered list */
+  list-style-type: decimal;
+  /* Use numbers for ordered list */
+  margin-left: 2rem;
+  /* Add spacing for ordered list */
 }
 
 .blog-detail ol li {
-  margin-bottom: 1.5rem; /* Space between ordered list items */
+  margin-bottom: 1.5rem;
+  /* Space between ordered list items */
 }
 
 /* Unordered List Styles (e.g., bullet points) */
 .blog-detail ul {
-  list-style-type: none; /* Remove default bullets */
-  margin-left: 2rem; /* Add spacing for unordered list */
+  list-style-type: none;
+  /* Remove default bullets */
+  margin-left: 2rem;
+  /* Add spacing for unordered list */
 }
 
 .blog-detail ul li {
   position: relative;
-  margin-bottom: 0.5rem; /* Space between unordered list items */
-  padding-left: 1rem; /* Add space between bullet and text */
+  margin-bottom: 0.5rem;
+  /* Space between unordered list items */
+  padding-left: 1rem;
+  /* Add space between bullet and text */
 }
 
 /* Custom bullet point for unordered list */
@@ -133,11 +142,14 @@
   content: '';
   position: absolute;
   left: 0;
-  top: 0.5rem; /* Center the bullet vertically */
+  top: 0.5rem;
+  /* Center the bullet vertically */
   width: 0.5rem;
   height: 0.5rem;
-  border: 1px dashed grey; /* Dashed border for custom bullet */
-  border-radius: 50%; /* Circular bullet */
+  border: 1px dashed grey;
+  /* Dashed border for custom bullet */
+  border-radius: 50%;
+  /* Circular bullet */
 }
 
 /* Headings */
@@ -162,13 +174,16 @@
 
 /* Bold text */
 .blog-detail strong {
-  font-weight: bold; /* Ensure strong tags are bold */
+  font-weight: bold;
+  /* Ensure strong tags are bold */
 }
 
 /* Additional styles for paragraph spacing */
 .blog-detail p {
-  margin-bottom: 1.5rem; /* Space below paragraphs */
-  margin-top: 1.5rem; /* Space below paragraphs */
+  margin-bottom: 1.5rem;
+  /* Space below paragraphs */
+  margin-top: 1.5rem;
+  /* Space below paragraphs */
 }
 
 /* Specific styling for h1 to h5 for further customization */
@@ -196,6 +211,7 @@
   font-size: 1.25rem;
   /* h5 smaller than others */
 }
+
 /* ----------------------- */
 /* ----------Links------------- */
 /* ----------------------- */
@@ -215,43 +231,59 @@
   text-decoration: underline;
   /* Add underline on hover */
 }
+
 /* ----------------------- */
 /* ----------Images------------- */
 /* ----------------------- */
 
 /* Style the figure element (wrapper for image and caption) */
 .blog-detail figure {
-  display: inline-block; /* Keep the image and caption together */
-  margin: 1.5rem auto; /* Center the image and caption, with space around */
-  text-align: center; /* Center align the caption text */
-  max-width: 100%; /* Ensure the figure doesn't exceed container width */
+  display: inline-block;
+  /* Keep the image and caption together */
+  margin: 1.5rem auto;
+  /* Center the image and caption, with space around */
+  text-align: center;
+  /* Center align the caption text */
+  max-width: 100%;
+  /* Ensure the figure doesn't exceed container width */
 }
 
 /* Style the image inside the figure */
 .blog-detail figure img {
-  max-width: 100%; /* Make sure the image is responsive */
-  height: auto; /* Ensure the image scales properly */
-  border-radius: 8px; /* Optional: Rounded corners for the image */
+  max-width: 100%;
+  /* Make sure the image is responsive */
+  height: auto;
+  /* Ensure the image scales properly */
+  border-radius: 8px;
+  /* Optional: Rounded corners for the image */
 }
 
 /* Style the caption text inside figcaption */
 .blog-detail figure figcaption {
-  font-family: 'Sora', sans-serif, Arial, Helvetica; /* Ensure the same font is used */
-  font-size: 0.9rem; /* Slightly smaller font for the caption */
-  color: #777; /* Grey color for the caption text */
-  margin-top: 0.5rem; /* Space between image and caption */
-  font-style: italic; /* Make the caption italic for emphasis */
+  font-family: 'Sora', sans-serif, Arial, Helvetica;
+  /* Ensure the same font is used */
+  font-size: 0.9rem;
+  /* Slightly smaller font for the caption */
+  color: #777;
+  /* Grey color for the caption text */
+  margin-top: 0.5rem;
+  /* Space between image and caption */
+  font-style: italic;
+  /* Make the caption italic for emphasis */
 }
 
 /* Underline any links within the caption */
 .blog-detail figure figcaption a {
-  text-decoration: underline; /* Underline links in captions */
-  color: #555; /* Optionally, change the link color */
+  text-decoration: underline;
+  /* Underline links in captions */
+  color: #555;
+  /* Optionally, change the link color */
 }
 
 /* Optional: Change link color on hover */
 .blog-detail figure figcaption a:hover {
-  color: #000; /* Darken the link on hover */
+  color: #000;
+  /* Darken the link on hover */
 }
 
 /* ----------------------- */
@@ -266,7 +298,8 @@
 
 @media (min-width: 1024px) {
   .blog-detail-container {
-      grid-template-columns: 2fr 1fr; /* 2/3 for blog content, 1/3 for recent posts */
+    grid-template-columns: 2fr 1fr;
+    /* 2/3 for blog content, 1/3 for recent posts */
   }
 }
 
@@ -277,8 +310,12 @@
 .recent-posts-list li {
   margin-bottom: 1.5rem;
 }
+
 .blog-date {
-  font-size: 0.75rem; /* Reduce font size for the date */
-  color: #6c757d; /* Optional: keep a muted color */
+  font-size: 0.75rem;
+  /* Reduce font size for the date */
+  color: #6c757d;
+  /* Optional: keep a muted color */
 }
+
 

@@ -10,6 +10,9 @@ export default {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        'purple-green': '0 4px 10px rgba(128, 0, 128, 0.5), 0 6px 25px rgba(16, 185, 129, 0.5)',  // Purple and green shadow
+      },
       colors: {
         color: {
           1: "#AC6AFF",
@@ -38,7 +41,7 @@ export default {
           13: "#6C7275",
         },
 
-        
+
       },
       fontFamily: {
         sans: ["var(--font-sora)", ...fontFamily.sans],
@@ -138,6 +141,7 @@ export default {
         ".button": {
           "@apply font-code text-xs font-bold uppercase tracking-wider": {},
         },
+
       });
       addUtilities({
         ".tap-highlight-color": {

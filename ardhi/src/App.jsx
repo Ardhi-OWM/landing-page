@@ -34,7 +34,7 @@ const App = () => {
         {/* Route for individual blog posts */}
 
         <Route path="/imprint" element={<Imprint />} />
-       
+
         <Route path="/blog/:id/" element={<BlogDetails />} />
 
         {/* Route for About page */}
@@ -45,6 +45,8 @@ const App = () => {
 
         {/* Route for Blogs page */}
         <Route path="/blogs" element={<Blogs />} />  {/* This will display all blogs */}
+
+
 
       </Routes>
       <Footer />

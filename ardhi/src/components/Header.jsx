@@ -73,7 +73,7 @@ const Header = () => {
                     <HamburgerMenu />
                 </nav>
 
-                <Button className="hidden lg:flex" href="#login">
+                <Button className="hidden lg:flex"  href="https://ardhi.de/"  >
                     Ardhi App
                 </Button>
 

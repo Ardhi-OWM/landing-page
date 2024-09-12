@@ -169,34 +169,23 @@ export const benefits = [
 ];
 
 export const socials = [
- /*  {
-    id: "0",
-    title: "Discord",
-    iconUrl: discordBlack,
-    url: 'https://linda-ochwada.netlify.app/',
-  },
-  {
-    id: "1",
-    title: "Twitter",
-    iconUrl: twitter,
-    url: 'https://linda-ochwada.netlify.app/',
-  }, */
+
   {
     id: "2",
     title: "Instagram",
     iconUrl: instagram,
-    url: 'https://linda-ochwada.netlify.app/',
+    url: 'https://ardhi.de/',
   },
- /*  {
+ {
     id: "3",
     title: "Telegram",
     iconUrl: telegram,
-    url: 'https://linda-ochwada.netlify.app/',
+    url: 'https://ardhi.de/',
   },
   {
     id: "4",
     title: "Facebook",
     iconUrl: facebook,
-    url: 'https://linda-ochwada.netlify.app/',
-  }, */
+    url: 'https://ardhi.de/',
+  }, 
 ];

@@ -43,16 +43,23 @@ const Footer = () => {
 
             {/* Logos section with left, center, and right alignment */}
             <div className='container flex justify-between items-center mt-5 mb-5'>
-                <div className="flex justify-start ">
-                    <img src={prototypefund} alt="Prototype Fund" className='h-20 rounded' />
+                <div className="flex justify-start">
+                    <a href="https://prototypefund.de/" target="_blank" rel="noopener noreferrer">
+                        <img src={prototypefund} alt="Prototype Fund" className='h-20 rounded hover:shadow-purple-green' />
+                    </a>
                 </div>
                 <div className="flex justify-center">
-                    <img src={okfd} alt="Open Knowledge Foundation Germany" className='h-20 rounded' />
+                    <a href="https://okfn.de/" target="_blank" rel="noopener noreferrer">
+                        <img src={okfd} alt="Open Knowledge Foundation Germany" className='h-20 rounded hover:shadow-purple-green' />
+                    </a>
                 </div>
                 <div className="flex justify-end">
-                    <img src={bbf} alt="Bundesministerium für Bildung und Forschung" className='h-20 rounded' />
+                    <a href="https://www.bmbf.de/" target="_blank" rel="noopener noreferrer">
+                        <img src={bbf} alt="Bundesministerium für Bildung und Forschung" className='h-20 rounded hover:shadow-purple-green' />
+                    </a>
                 </div>
             </div>
+
             {/* hr line for the imprint*/}
             <div className="w-2/3 mx-auto mb-5 h-[2px] bg-gradient-to-r from-transparent via-gray-800 to-transparent dark:via-white"></div>
 
@@ -61,7 +68,7 @@ const Footer = () => {
                 <p className='caption text-n-4 lg:block'>
                     {`© ${new Date().getFullYear()} Ardhi. All rights reserved.`}
                 </p>
-                <a href="/imprint" className="tagline text-n-4 hover:underline ">
+                <a href="/imprint" className="tagline text-n-4 hover:underline " target="_blank" rel="noopener noreferrer">
                     Imprint
                 </a>
             </div>
