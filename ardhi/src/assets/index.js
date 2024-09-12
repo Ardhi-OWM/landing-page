@@ -71,7 +71,20 @@ import curve1 from "./collab/curve-1.svg";
 import curve2 from "./collab/curve-2.svg";
 
 
+// footer Logos
+import bbf from "./footer/bbf.jpg";
+import okfd from "./footer/okfd_logo.jpg";
+import prototypefund from "./footer/prototypefund.jpg";
+
+
 export {
+
+    // footer Logos
+    bbf,
+    okfd,
+    prototypefund,
+
+
     // collab
     curve1,
     curve2,

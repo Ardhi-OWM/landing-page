@@ -10,6 +10,7 @@ import Collaboration from "./components/Collaboration";
 import Blogs from "./components/Blogs";
 import Footer from "./components/Footer";
 import BlogDetails from "./components/BlogDetails"; // Import the BlogDetail component
+import Imprint from "./components/Imprint";
 
 
 const App = () => {
@@ -31,6 +32,8 @@ const App = () => {
         />
 
         {/* Route for individual blog posts */}
+
+        <Route path="/imprint" element={<Imprint />} />
        
         <Route path="/blog/:id/" element={<BlogDetails />} />
 
