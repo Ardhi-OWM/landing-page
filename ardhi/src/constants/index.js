@@ -135,16 +135,16 @@ export const collabApps = [
 export const benefits = [
   {
     id: "0",
-    title: "Seamlessly Run Python Scripts ",
-    text: "Run Python scripts directly within the platform, providing a powerful environment for custom geospatial analysis.",
+    title: "Seamlessly Visualize Model Results",
+    text: "Visualize data and analytics from models on open-source basemaps directly within the platform.",
     backgroundUrl: "./src/assets/benefits/card-1.svg",
     iconUrl: run,
     imageUrl: nLight,
   },
   {
     id: "1",
-    title: "Interactive Result Visualization",
-    text: "Transform raw data into dynamic, interactive maps, making it easier to interpret and share your findings with others.",
+    title: "Convert Geospatial Data into Multiple Formats",
+    text: "Transform raw data into geospatial formats, such as GeoJson, GeoTIFF, CSV etc, using our Ardhi Converter.",
     backgroundUrl: "./src/assets/benefits/card-2.svg",
     iconUrl: benefitIcon3,
     imageUrl: nLight,
@@ -152,7 +152,7 @@ export const benefits = [
   },
   {
     id: "2",
-    title: "Download Results in Multiple Formats",
+    title: "Download Results  in Multiple Formats",
     text: "Export your analysis results in a variety of formats, including txt, Geotiff, CSV, GeoJson etc. ",
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: download,

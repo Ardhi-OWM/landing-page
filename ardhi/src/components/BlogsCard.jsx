@@ -89,10 +89,14 @@ const BlogsCard = () => {
             <div className='mt-6 flex items-center justify-auto'>
               {/* Internal link to blog detail page */}
               <Link
-                to={`/blog/${item.id}`}
+                // to={`/blog/${item.id}`}
+                to={`/blog/${item.title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}`}
                 onClick={(e) => {
                   e.preventDefault(); // Prevents the default navigation
-                  window.open(`/blog/${item.id}`, '_blank', 'noopener,noreferrer'); // Opens in a new tab
+                  window.open(
+                    //`/blog/${item.id}`,
+                    `/blog/${item.title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}`,
+                    '_blank', 'noopener,noreferrer'); // Opens in a new tab
                 }}
                 className='tagline text-n-10 hover:text-n-5 underline uppercase px-3 py-1'>
                 Read more ...

@@ -11,7 +11,7 @@ import { HamburgerMenu } from "./design/Header";
 const Header = () => {
     const pathname = useLocation();
     const navigate = useNavigate(); // Use navigate for programmatic navigation
-    const [openNavigation, setOpenNavigation] = useState(true);
+    const [openNavigation, setOpenNavigation] = useState(false);
 
     const toggleNavigation = () => {
         if (openNavigation) {

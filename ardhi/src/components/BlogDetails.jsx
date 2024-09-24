@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 
 const BlogDetails = () => {
-    const { id } = useParams(); // Get the blog post ID from the URL
+    const { slug } = useParams(); // Get the blog post ID from the URL
+
     const [post, setPost] = useState(null);
     const [recentPosts, setRecentPosts] = useState([]); // State for recent posts
     const [loading, setLoading] = useState(true);
@@ -55,19 +56,21 @@ const BlogDetails = () => {
 
         loadWordPressStyles();
 
-        const fetchPost = async () => {
+        const fetchPostBySlug = async () => {
             try {
-                const response = await fetch(`https://public-api.wordpress.com/wp/v2/sites/ardhi23.wordpress.com/posts/${id}`);
+                const response = await fetch(`https://public-api.wordpress.com/wp/v2/sites/ardhi23.wordpress.com/posts?slug=${slug}`);
                 const data = await response.json();
 
-                // Sanitize the content to remove &nbsp;
-                const sanitizedContent = data.content.rendered.replace(/&nbsp;/g, " ");
 
-                setPost({
-                    title: data.title.rendered.replace(/&nbsp;/g, " "), // Sanitize the title as well
-                    content: sanitizedContent, // Keep full HTML content from WordPress
-                    date: new Date(data.date).toLocaleDateString() // Format the date
-                });
+                if (data && data.length > 0) {
+                    const post = data[0]; // Assuming the API returns an array of posts, take the first one
+                    setPost({
+                        title: post.title.rendered.replace(/&nbsp;/g, " "),
+                        content: post.content.rendered,
+                        date: new Date(post.date).toLocaleDateString(),
+                        featured_media: post.featured_media ? post.featured_media.source_url : null
+                    });
+                }
 
                 setLoading(false);
             } catch (error) {
@@ -75,6 +78,7 @@ const BlogDetails = () => {
                 setLoading(false);
             }
         };
+
 
         const fetchRecentPosts = async () => {
             try {
@@ -88,9 +92,9 @@ const BlogDetails = () => {
 
 
 
-        fetchPost();
+        fetchPostBySlug();
         fetchRecentPosts();
-    }, [id]);
+    }, [slug]);
 
     if (loading) {
         return <p>Loading post...</p>;
@@ -129,23 +133,34 @@ const BlogDetails = () => {
                         {/* Title above the recent posts list */}
                         <h2 className="text-xl font-bold mb-4 text-center uppercase">Recent Posts</h2>
                         <ul>
-                            {recentPosts.map((recentPost) => (
-                                <li key={recentPost.id} className="mb-4">
-                                    <Link to={`/blog/${recentPost.id}`} className="text-blue-500 hover:underline font-source-code">
-                                        {recentPost.title.rendered.replace(/&nbsp;/g, " ")}
-                                    </Link>
-                                    <p className="blog-date">Published on {new Date(recentPost.date).toLocaleDateString()}</p>
+                            {recentPosts.map((recentPost) => {
+                                // Generate a slug from the post title for URL, removing non-breaking spaces (&nbsp;)
+                                const postSlug = recentPost.title.rendered
+                                    .replace(/&nbsp;/g, ' ') // Replace &nbsp; with a space
+                                    .toLowerCase()
+                                    .replace(/\s+/g, '-')  // Replace spaces with dashes
+                                    .replace(/[^a-z0-9\-]/g, ''); // Remove any special characters
 
-                                    <p className="text-sm text-gray-500 mt-2">
-                                        {truncateText(recentPost.excerpt.rendered.replace(/<[^>]+>/g, ''), 50)}
-                                        <Link
-                                            to={`/blog/${recentPost.id}`}
-                                            className="text-xs text-blue-600/50 hover:underline font-bold ml-2">
-                                            Read More
+                                return (
+                                    <li key={recentPost.id} className="mb-4">
+                                        <Link to={`/blog/${postSlug}`}
+                                            className="text-blue-500 hover:underline font-source-code">
+                                            {recentPost.title.rendered.replace(/&nbsp;/g, " ")}
                                         </Link>
-                                    </p>
-                                </li>
-                            ))}
+                                        <p className="blog-date">Published on {new Date(recentPost.date).toLocaleDateString()}</p>
+
+                                        <p className="text-sm text-gray-500 mt-2">
+                                            {truncateText(recentPost.excerpt.rendered.replace(/<[^>]+>/g, ''), 50)}
+                                            <Link
+                                                to={`/blog/${postSlug}`}
+                                                className="text-xs text-blue-600/50 hover:underline font-bold ml-2">
+                                                Read More
+                                            </Link>
+                                        </p>
+                                    </li>
+                                );
+                            })}
+
                         </ul>
                     </div>
                 </div>

@@ -35,7 +35,7 @@ const App = () => {
 
         <Route path="/imprint" element={<Imprint />} />
 
-        <Route path="/blog/:id/" element={<BlogDetails />} />
+        
 
         {/* Route for About page */}
         <Route path="/about" element={<Hero />} />
@@ -44,8 +44,9 @@ const App = () => {
         <Route path="/features" element={<Benefits />} />  {/* Benefits is used for Features */}
 
         {/* Route for Blogs page */}
-        <Route path="/blogs" element={<Blogs />} />  {/* This will display all blogs */}
-
+        <Route path="/blogs" element={<Blogs />} />  
+        <Route path="/blog/:slug/" element={<BlogDetails />} />
+        {/* <Route path="/blog/:id/" element={<BlogDetails />} /> */}
 
 
       </Routes>
